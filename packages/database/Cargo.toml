@@ -1,0 +1,27 @@
+[package]
+name = "rustinit-database"
+description = "Postgres client, migrations, seed, and sqlx repository implementations."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+rustinit-core = { workspace = true }
+rustinit-logger = { workspace = true }
+sqlx = { workspace = true, features = [
+  "chrono",
+  "json",
+  "macros",
+  "migrate",
+  "postgres",
+  "runtime-tokio",
+  "tls-rustls-ring-webpki",
+  "uuid",
+] }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+
+[lints]
+workspace = true

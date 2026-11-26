@@ -1,0 +1,16 @@
+[package]
+name = "rustinit-logger"
+description = "Installs the tracing subscriber: human-readable lines locally, JSON elsewhere."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+rustinit-core = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true, features = ["json"] }
+
+[lints]
+workspace = true

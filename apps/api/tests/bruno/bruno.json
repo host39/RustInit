@@ -1,0 +1,6 @@
+{
+  "version": "1",
+  "name": "rustinit-api",
+  "type": "collection",
+  "ignore": ["node_modules", ".git", ".run"]
+}
