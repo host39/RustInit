@@ -66,6 +66,10 @@ mod tests {
         let response = get(app(), "/doc").await;
         assert_eq!(response.status, StatusCode::OK);
         assert_eq!(response.body["info"]["title"], "RustInit API");
+        assert_eq!(
+            response.body["info"]["license"]["name"],
+            "PolyForm-Noncommercial-1.0.0"
+        );
         assert!(response.body["paths"]["/health/ready"].is_object());
         assert!(response.body["components"]["schemas"]["ErrorResponse"].is_object());
     }

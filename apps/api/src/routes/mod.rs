@@ -11,8 +11,6 @@ use crate::routes::docs::ApiDoc;
 
 /// Every documented route, collected into one router plus the OpenAPI document.
 pub fn router() -> OpenApiRouter<AppState> {
-    let mut document = ApiDoc::openapi();
-    // utoipa fills the license from Cargo.toml; the template sets none, so publish none.
-    document.info.license = None;
-    OpenApiRouter::with_openapi(document).merge(health::router())
+    // utoipa fills `info.license` from the workspace `license` in Cargo.toml.
+    OpenApiRouter::with_openapi(ApiDoc::openapi()).merge(health::router())
 }

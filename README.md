@@ -13,6 +13,7 @@
 [![pnpm](https://img.shields.io/badge/pnpm-10-f69220?logo=pnpm&logoColor=white)](https://pnpm.io/)
 [![Biome](https://img.shields.io/badge/Biome-2.5-60A5FA?logo=biome&logoColor=white)](https://biomejs.dev/)
 [![Docker](https://img.shields.io/badge/Docker-Postgres-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+[![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-lightgrey)](./LICENSE)
 
 </div>
 
@@ -133,3 +134,11 @@ See [docs/env.md](./docs/env.md) for the full reference. `make setup` copies `ap
 - **AI assistants**: [AGENTS.md](./AGENTS.md) (Cursor; Claude Code via [CLAUDE.md](./CLAUDE.md))
   - **Rules** (auto-applied by path): `.ai/rules/*.md` via `.cursor/rules/` or `.claude/rules/` wrappers
   - **Skills** (on demand): `/add-domain`, `/architecture`, `/api-response-patterns`, `/bruno-tests`, `/dotted-error-messages`, `/undraw-illustrations` in `.claude/skills/`
+
+---
+
+## License
+
+[PolyForm Noncommercial License 1.0.0](./LICENSE). Noncommercial use, changes, and redistribution are allowed as long as the license terms and the `Required Notice` line travel with the code. Commercial use needs a separate license from the copyright holder.
+
+Projects created with `scripts/create-project.mjs` copy this `LICENSE`; replace it if a new project needs different terms.
