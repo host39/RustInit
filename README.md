@@ -133,7 +133,7 @@ See [docs/env.md](./docs/env.md) for the full reference. `make setup` copies `ap
 - **Deployment**: [container](./docs/deployment-container.md) or [AWS Lambda](./docs/deployment-lambda.md)
 - **AI assistants**: [AGENTS.md](./AGENTS.md) (Cursor; Claude Code via [CLAUDE.md](./CLAUDE.md))
   - **Rules** (auto-applied by path): `.ai/rules/*.md` via `.cursor/rules/` or `.claude/rules/` wrappers
-  - **Skills** (on demand): `/add-domain`, `/architecture`, `/api-response-patterns`, `/bruno-tests`, `/dotted-error-messages`, `/undraw-illustrations` in `.claude/skills/`
+  - **Skills** (on demand): `/add-domain`, `/architecture`, `/api-response-patterns`, `/bruno-tests`, `/dotted-error-messages`, `/undraw-illustrations`, `/agent-workflows` in `.claude/skills/`
 
 ---
 
